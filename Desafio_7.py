@@ -11,3 +11,40 @@
 # valor_conta = 100
 # qualidade_servico = 'excelente'
 # o valor da gorjeta é de R$ 5,00
+
+
+def calcular_gorjeta(valor_conta, qualidade_servico):
+    qualidade = qualidade_servico.lower()
+    
+    if qualidade == 'ruim':
+        gorjeta = 0
+    elif qualidade == 'medio':
+        gorjeta = valor_conta * 0.025 
+    elif qualidade == 'bom':
+        gorjeta = valor_conta * 0.04 
+    elif qualidade == 'excelente':
+        gorjeta = valor_conta * 0.05 
+    else:
+        gorjeta = 0
+        print("Qualidade de serviço inválida.")
+        
+    print(f"o valor da gorjeta é de R$ {gorjeta:.2f}")
+    return gorjeta
+
+valor_conta = 100
+qualidade_servico = 'excelente'
+
+calcular_gorjeta(valor_conta, qualidade_servico)
+
+
+
+
+
+
+
+
+
+
+
+
+

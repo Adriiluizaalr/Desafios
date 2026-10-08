@@ -5,3 +5,35 @@
 # idade = 10
 # classificacao = 'Maior de 12'
 # resposta = "Não pode assitir o filme"
+
+
+def pode_ver_filme(idade, classificacao):
+    if classificacao == 'L':
+        pode = True
+    elif classificacao == 'Maior de 12' and idade >= 12:
+        pode = True
+    elif classificacao == 'Maior de 14' and idade >= 14:
+        pode = True
+    elif classificacao == 'Maior 16' and idade >= 16:
+        pode = True
+    elif classificacao == 'Maior 18' and idade >= 18:
+        pode = True
+    else:
+        pode = False
+
+    if pode:
+        resposta = "Pode assistir o filme"
+    else:
+        resposta = "Não pode assitir o filme"
+        
+    print(resposta)
+    return resposta
+
+idade = 10
+classificacao = 'Maior de 12'
+
+pode_ver_filme(idade, classificacao)
+
+
+
+

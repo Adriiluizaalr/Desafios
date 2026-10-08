@@ -5,3 +5,16 @@ from random import choice
 nomes = ["Miguel", "Kaio", "Leonardo", "Gustavo A"]
 
 
+from random import choice
+nomes = ["Miguel", "Kaio", "Leonardo", "Gustavo A"]
+escolhido = choice(nomes)
+print('o aluno escolhido foi:', {escolhido})
+
+
+
+
+
+
+
+
+
